@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://dppsnnihwlxql"]
+[gd_scene load_steps=3 format=3 uid="uid://dppsnnihwlxql"]
+
+[ext_resource type="Script" path="res://Scenes/Spawner/spawner.gd" id="1_jj13w"]
+[ext_resource type="PackedScene" uid="uid://dbnsqmon8uf0c" path="res://Scenes/Falling Objects/Falling Object Round.tscn" id="1_l66fv"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_jj13w")
+objects = [ExtResource("1_l66fv")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="FallingObjectRound" parent="." instance=ExtResource("1_l66fv")]
+position = Vector2(0, -507)
