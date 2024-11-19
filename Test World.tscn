@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dppsnnihwlxql"]
+[gd_scene load_steps=4 format=3 uid="uid://dppsnnihwlxql"]
 
 [ext_resource type="Script" path="res://Scenes/Spawner/spawner.gd" id="1_jj13w"]
 [ext_resource type="PackedScene" uid="uid://dbnsqmon8uf0c" path="res://Scenes/Falling Objects/Falling Object Round.tscn" id="1_l66fv"]
+[ext_resource type="PackedScene" uid="uid://dsfy6swbtd3ei" path="res://Scenes/Platform/Platform.tscn" id="3_cu4lh"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_jj13w")
@@ -11,3 +12,7 @@ objects = [ExtResource("1_l66fv")]
 
 [node name="FallingObjectRound" parent="." instance=ExtResource("1_l66fv")]
 position = Vector2(0, -507)
+
+[node name="Platform" parent="." instance=ExtResource("3_cu4lh")]
+position = Vector2(0, 296)
+speed = 2.0
